@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import BookCard from "../components/BookCard";
-
+/* Browsing for books from the online library*/
 function BrowseBooks() {
   const { category } = useParams();
   const books = useSelector((state) => state.books);

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import BookCard from "../components/BookCard";
-
+/* BAsic Home For Online Library */
 function Home() {
   const books = useSelector((state) => state.books);
   const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "Biography"];
@@ -18,10 +18,10 @@ function Home() {
           </Link>
         ))}
       </div>
-
+        
       <h2>Popular Books</h2>
       <div className="grid">
-        {books.slice(0, 3).map((book) => (
+        {books.slice(0, 4).map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
       </div>

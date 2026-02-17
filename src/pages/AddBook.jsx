@@ -1,3 +1,4 @@
+/* Using Redux react for adding the new data into the online library */
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addBook } from "../redux/booksSlice";
@@ -8,6 +9,7 @@ function AddBook() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
+    image:"",
     title: "",
     author: "",
     category: "",
@@ -22,9 +24,9 @@ function AddBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { title, author, category, description, rating } = formData;
+    const { image,title, author, category, description, rating } = formData;
 
-    if (!title || !author || !category || !description || !rating) {
+    if (!image || !title || !author || !category || !description || !rating) {
       alert("All fields are required!");
       return;
     }
@@ -44,6 +46,7 @@ function AddBook() {
       <h1>Add New Book</h1>
 
       <form onSubmit={handleSubmit} className="form">
+        <input name="image" placeholder="Image" onChange={handleChange}/>
         <input name="title" placeholder="Title" onChange={handleChange} />
         <input name="author" placeholder="Author" onChange={handleChange} />
         <input name="category" placeholder="Category" onChange={handleChange} />

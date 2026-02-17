@@ -6,7 +6,7 @@ import { store } from "./redux/store";
 import App from "./App";
 import "./index.css";
 import "./App.css";
-
+/*store "stores" the data of all deatiled information inthe webpage or browser*/
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>

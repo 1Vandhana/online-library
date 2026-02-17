@@ -1,21 +1,31 @@
+/* Styling for index.css page for online library*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: hsl(216, 29%, 97%);
+  background-color: #f5fbfb;
+   
 }
-
+/* for navbar online library */
 .navbar {
   display: flex;
   justify-content: space-between;
   background: #2c3e50;
   padding: 15px;
-  color: white;
+  color: #f2f5f2;
+  
 }
 
+/* for home ,browse and add books */
 .navbar a {
-  color: white;
+  color: hsl(0, 27%, 98%);
   margin-left: 15px;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #11c46e;
+  transform: translateY(-2px);
 }
 
 .container {
@@ -29,19 +39,19 @@ body {
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 15px;
   border-radius: 8px;
   width: 250px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
+/* buttons */
 .btn {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
   background: #3498db;
-  color: white;
+  color: #f7f1f1;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -51,7 +61,7 @@ body {
   margin-bottom: 20px;
   width: 250px;
 }
-
+/* input and text areas*/
 .form input,
 .form textarea {
   display: block;

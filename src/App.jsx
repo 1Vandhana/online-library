@@ -5,7 +5,7 @@ import BrowseBooks from "./pages/BrowseBooks";
 import BookDetails from "./pages/BookDetails";
 import AddBook from "./pages/AddBook";
 import NotFound from "./pages/NotFound";
-
+/* Router Path for Navbar,Home,Broser,Details ,adding the books and not found Paths*/
 function App() {
   return (
     <Routes>

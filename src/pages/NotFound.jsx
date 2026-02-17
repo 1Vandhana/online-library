@@ -1,5 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
-
+/* Used for not founding any data in the Library*/
 function NotFound() {
   const location = useLocation();
 

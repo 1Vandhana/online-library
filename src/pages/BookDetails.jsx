@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+/* Viewing the details of the Books */
 function BookDetails() {
   const { id } = useParams();
   const books = useSelector((state) => state.books);
@@ -12,9 +12,9 @@ function BookDetails() {
   return (
     <div className="container">
       <h1>{book.title}</h1>
-      <p><strong>Author:</strong> {book.author}</p>
-      <p><strong>Category:</strong> {book.category}</p>
-      <p><strong>Description:</strong> {book.description}</p>
+      <p><strong>✍️Author:</strong> {book.author}</p>
+      <p><strong>🏷️Category:</strong> {book.category}</p>
+      <p><strong>📝Description:</strong> {book.description}</p>
       <p><strong>Rating:</strong> ⭐ {book.rating}</p>
 
       <Link to="/books" className="btn">

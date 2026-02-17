@@ -1,5 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { dummyBooks } from "../data/dummyBooks";
+// load books from localStorage if available
+const storedBooks=localStorage.getItem("books")
+? JSON.parse(localStorage.getItem("bools"))
+:dummyBooks;
 
 const booksSlice = createSlice({
   name: "books",
@@ -7,6 +11,8 @@ const booksSlice = createSlice({
   reducers: {
     addBook: (state, action) => {
       state.unshift(action.payload);
+
+      ///Save updated books to the LocalStorage
     }
   }
 });
