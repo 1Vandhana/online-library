@@ -1,0 +1,23 @@
+/* /// categories container*/
+.categories {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+/* ///category link styling */
+.category-link {
+  text-decoration: none !important;
+  background-color: #87c4f0 !important;
+  color: rgb(15, 15, 15) !important;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+/* ///Hovering Effect on category link*/
+.category-link:hover {
+  background-color: #3498db !important;
+  transform: scale(1.05);
+}
