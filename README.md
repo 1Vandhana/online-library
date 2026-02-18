@@ -61,6 +61,7 @@ Clone the repository: 1.git clone <your-repository-link>
                         3.Install dependencies: npm install
                         4.Start the development server:npm run dev
                         5.Open the browser and visit:(http://localhost:5173/)
+                        ![alt text](Image.png)
 
 
 📂 Folder Structure
